@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -11,7 +10,6 @@ class LoginPage extends StatelessWidget {
             Image.asset(
               "assets/images/photo2.png",
               fit: BoxFit.cover,
-              
             ),
             SizedBox(
               height: 20.0,
