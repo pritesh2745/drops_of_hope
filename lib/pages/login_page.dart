@@ -1,5 +1,23 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-class LoginPage extends StatelessWidget {
+
+class LoginPage extends StatefulWidget {
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  FirebaseAuth auth = FirebaseAuth.instance;
+
+  void signup() async {
+    try {
+      await auth.createUserWithEmailAndPassword(
+          email: "vandrapritesh2745@gmail.com", password: "123456");
+    } catch (e) {
+      print(e);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -47,9 +65,9 @@ class LoginPage extends StatelessWidget {
                   ),
                   ElevatedButton(
                     child: Text("Login"),
-                    style: TextButton.styleFrom(minimumSize: Size(150,40)),
+                    style: TextButton.styleFrom(minimumSize: Size(150, 40)),
                     onPressed: () {
-                      print("Hi donor");
+                      signup();
                     },
                   )
                 ],
