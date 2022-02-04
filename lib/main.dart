@@ -1,5 +1,5 @@
-import 'package:app1/pages/home_page.dart';
-import 'package:app1/pages/login_page.dart';
+import 'package:app1/screen/SplashScreen.dart';
+import 'package:app1/screen/login_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -30,9 +30,10 @@ class MyApp extends StatelessWidget {
       // ),
       initialRoute: "/login",
       routes: {
-        "/": (context) => LoginPage(),
-        "/home": (context) => Homepage(),
-        "/login": (context) => LoginPage()
+        // "/": (context) => LoginPage(),
+        // "/home": (context) => Homepage(),
+        "/login": (context) => LoginPage(),
+        "/Splash": (context) => SplashScreen(),
       },
     );
   }
