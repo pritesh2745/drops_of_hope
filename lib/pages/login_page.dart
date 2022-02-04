@@ -9,6 +9,8 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   FirebaseAuth auth = FirebaseAuth.instance;
 
+
+
   void signup() async {
     try {
       await auth.createUserWithEmailAndPassword(
