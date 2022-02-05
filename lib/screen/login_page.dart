@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
+  
   @override
   State<LoginPage> createState() => _LoginPageState();
 }
@@ -12,7 +13,7 @@ class _LoginPageState extends State<LoginPage> {
   void signup() async {
     try {
       await auth.createUserWithEmailAndPassword(
-          email: "20dit102@charusat.edu.in", password: "123456");
+          email: "20dit105@charusat.edu.in", password: "123456");
       Navigator.of(context).pushNamed("/Splash");
     } catch (e) {
       print(e);
@@ -22,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
   void signin() async {
     try {
       await auth.signInWithEmailAndPassword(
-          email: "20dit102@charusat.edu.in", password: "123456");
+          email: "20dit105@charusat.edu.in", password: "123456");
     } catch (e) {
       print(e);
     }

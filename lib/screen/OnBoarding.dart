@@ -91,7 +91,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             )),
                             SizedBox(height: 15.0),
                             Text(
-                              'On-demand fuel delivery app helps you in saving considerable amount of time as you no longer have to wait in the never-ending queues. You can get fuel for vehicle anywhere and at any time.',
+                              'Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore et.',
                               style:  TextStyle(
                               fontSize: 16,
                               color: Colors.redAccent,
