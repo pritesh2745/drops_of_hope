@@ -27,24 +27,26 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
         backgroundColor: Color(0xffffffff),
-        body: Center(
-          child: Column(
-            children: [
-              SizedBox(
-                height: 300,
-              ),
-              Center(child: Text("Blood Donation App")),
-              // SvgPicture.asset(
-              //   'assets/images/BestDesign.svg',
-              //   height: 450,
-              //   alignment: Alignment.center,
-              // ),
-              SizedBox(
-                height: 230,
-              ),
-              Lottie.asset("assets/animations/lf30_editor_7io4xwvy.json",
-                  height: 300)
-            ],
+        body: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 300,
+                ),
+                Center(child: Text("Blood Donation App")),
+                // SvgPicture.asset(
+                //   'assets/images/BestDesign.svg',
+                //   height: 450,
+                //   alignment: Alignment.center,
+                // ),
+                SizedBox(
+                  height: 230,
+                ),
+                Lottie.asset("assets/animations/lf30_editor_7io4xwvy.json",
+                    height: 300)
+              ],
+            ),
           ),
         ));
   }
