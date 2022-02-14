@@ -76,17 +76,35 @@ class registration extends StatelessWidget {
   late String username, password;
   @override
   Widget build(BuildContext context) {
+      Widget bigCircle = new Container(
+      width: 300.0,
+      height: 300.0,
+      decoration: new BoxDecoration(
+        color: Colors.orange,
+        shape: BoxShape.circle,
+      ),
+    );
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
-              child: Image.asset(
-                "assets/images/photo2.png",
-                fit: BoxFit.cover,
-              ),
-            ),
+           Container(
+             width:300.0,
+             height: 300.0,
+             decoration: new BoxDecoration(color: Colors.red,shape: BoxShape.circle,),
+           ),
+ 
+          
+            // Container(
+            //   child: Image.asset(
+            //     "assets/images/photo2.png",
+            //     fit: BoxFit.cover,
+            //   ),
+            // ),
+            
             Container(
               margin: EdgeInsets.symmetric(horizontal: 20, vertical: 7),
               child: TextFormField(
