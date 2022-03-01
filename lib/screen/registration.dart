@@ -184,7 +184,17 @@ class registration extends StatelessWidget {
               child: Text("Sign up"),
               style: TextButton.styleFrom(minimumSize: Size(150, 40)),
               onPressed: () {
-                signup(context, username,password);
+                
+                // main vastu
+
+
+                // signup(context, username,password);
+
+
+
+
+ Navigator.of(context).pushNamed("/login");
+
                 // Navigator.of(context).pushNamed("/login");
                 print("hello folks");
               },
