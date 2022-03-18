@@ -186,6 +186,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               curve: Curves.ease,
                             );
                           },
+                          
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             mainAxisSize: MainAxisSize.min,
