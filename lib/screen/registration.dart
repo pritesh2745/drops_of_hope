@@ -416,7 +416,7 @@ class registration extends StatelessWidget {
 
  Navigator.of(context).pushNamed("/login");
 
-                // Navigator.of(context).pushNamed("/login");
+                Navigator.of(context).pushNamed("/login");
                 print("hello folks");
 
                         
