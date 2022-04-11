@@ -1,13 +1,22 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
-void main() => runApp(GridofDonor());
+// void main() => runApp(GridofDonor());
+// TextEditingController _userName = new TextEditingController();
 
 class GridofDonor extends StatelessWidget {
+  String userName;
+  GridofDonor(this.userName);
+  // GridofDonor({ this.userName});
+  late final String username;
+  // late final String userName;
   @override
   Widget build(BuildContext context) {
     return Container(
         child: Scaffold(
           appBar: AppBar(
+            backgroundColor: Color(0xFFEF393C),
             title: Text("Homepage"),
           ),
           drawer: Drawer(
@@ -94,12 +103,14 @@ class GridofDonor extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(-0.2, -1),
+                              // alignment: AlignmentDirectional(-0.2, -1),
                               child: Container(
+                                //  color: Color(0xFF939292),
                                 width: 70,
                                 height: 70,
                                 clipBehavior: Clip.antiAlias,
                                 decoration: BoxDecoration(
+                                  color: Color(0xFF939292),
                                   shape: BoxShape.circle,
                                 ),
                                 child: Image.asset(
@@ -118,15 +129,14 @@ class GridofDonor extends StatelessWidget {
                                 child: Align(
                                   alignment: AlignmentDirectional(-0.75, 0),
                                   child: Text(
-                                    'Pritesh Vandra',
+                                    'hey ${userName}',
                                     textAlign: TextAlign.center,
-
-                                    // .override(
-                                    //   fontFamily: 'Ubuntu',
-                                    //   color: Color(0xFF939292),
-                                    //   fontSize: 20,
-                                    //   fontWeight: FontWeight.w500,
-                                    // ),
+                                    style: TextStyle(
+                                      fontFamily: 'Ubuntu',
+                                      color: Color(0xFF939292),
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                    ),
                                   ),
                                 ),
                               ),
@@ -169,7 +179,7 @@ class GridofDonor extends StatelessWidget {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           15, 15, 15, 15),
                                       child: Image.asset(
-                                        'assets/images/blood-type.png',
+                                        'assets/images/A-.png',
                                         width: 100,
                                         height: 100,
                                         fit: BoxFit.cover,
@@ -194,7 +204,7 @@ class GridofDonor extends StatelessWidget {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           15, 15, 15, 15),
                                       child: Image.asset(
-                                        'assets/images/blood-type.png',
+                                        'assets/images/A+.png',
                                         width: 100,
                                         height: 100,
                                         fit: BoxFit.cover,
@@ -219,7 +229,7 @@ class GridofDonor extends StatelessWidget {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           15, 15, 15, 15),
                                       child: Image.asset(
-                                        'assets/images/blood-type.png',
+                                        'assets/images/AB-.png',
                                         width: 100,
                                         height: 100,
                                         fit: BoxFit.cover,
@@ -244,7 +254,7 @@ class GridofDonor extends StatelessWidget {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           15, 15, 15, 15),
                                       child: Image.asset(
-                                        'assets/images/blood-type.png',
+                                        'assets/images/B-.png',
                                         width: 100,
                                         height: 100,
                                         fit: BoxFit.cover,
@@ -269,7 +279,7 @@ class GridofDonor extends StatelessWidget {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           15, 15, 15, 15),
                                       child: Image.asset(
-                                        'assets/images/blood-type.png',
+                                        'assets/images/B+.png',
                                         width: 100,
                                         height: 100,
                                         fit: BoxFit.cover,
@@ -294,8 +304,7 @@ class GridofDonor extends StatelessWidget {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           15, 15, 15, 15),
                                       child: Image.asset(
-                                        'assets/images/blood-type.png',
-                                        width: 100,
+                                        'assets/images/O-.png',
                                         height: 100,
                                         fit: BoxFit.cover,
                                       ),
@@ -313,7 +322,7 @@ class GridofDonor extends StatelessWidget {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         15, 15, 15, 15),
                                     child: Image.asset(
-                                      'assets/images/blood-type.png',
+                                      'assets/images/O+.png',
                                       width: 100,
                                       height: 100,
                                       fit: BoxFit.cover,
@@ -331,7 +340,7 @@ class GridofDonor extends StatelessWidget {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         15, 15, 15, 15),
                                     child: Image.asset(
-                                      'assets/images/blood-type.png',
+                                      'assets/images/AB+.png',
                                       width: 100,
                                       height: 100,
                                       fit: BoxFit.cover,

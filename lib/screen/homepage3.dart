@@ -128,8 +128,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                       Padding(
                         padding:
                             EdgeInsets.fromLTRB(10, 25, 196, 10),
-                        child: Image.network(
-                          'https://picsum.photos/seed/897/600',
+                        child: Image.asset(
+                          "assests/images/hey.png",
                           width: 75,
                           height: 90,
                           fit: BoxFit.cover,
@@ -138,18 +138,18 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                       Padding(
                         padding:
                            EdgeInsets.fromLTRB(10, 25, 196, 10),
-                        child: Image.network(
-                          'https://picsum.photos/seed/897/600',
+                        child: Image.asset(
+                  "assests/images/hey.png",
                           width: 75,
                           height: 90,
-                          fit: BoxFit.cover,
+                          fit: BoxFit.cover, 
                         ),
                       ),
                       Padding(
                         padding:
                           EdgeInsets.fromLTRB(10, 25, 196, 10),
-                        child: Image.network(
-                          'https://picsum.photos/seed/897/600',
+                        child: Image.asset(
+                           "assests/images/hey.png",
                           width: 75,
                           height: 90,
                           fit: BoxFit.cover,

@@ -7,11 +7,15 @@ import 'package:flutter/services.dart';
 import 'package:lottie/lottie.dart';
 
 class OnboardingScreen extends StatefulWidget {
+  String userName;
+  OnboardingScreen(this.userName);
   @override
-  _OnboardingScreenState createState() => _OnboardingScreenState();
+  _OnboardingScreenState createState() => _OnboardingScreenState(userName);
 }
 
 class _OnboardingScreenState extends State<OnboardingScreen> {
+  String userName;
+  _OnboardingScreenState(this.userName);
   final int _numPages = 3;
   final PageController _pageController = PageController(initialPage: 0);
   int _currentPage = 0;
@@ -186,7 +190,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               curve: Curves.ease,
                             );
                           },
-                          
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             mainAxisSize: MainAxisSize.min,
@@ -221,8 +224,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               color: Colors.white,
               child: GestureDetector(
                 onTap: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (builder) => Home()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (builder) => Home(userName)));
                 },
                 child: Center(
                   child: Padding(

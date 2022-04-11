@@ -1,7 +1,4 @@
-// import '../flutter_flow/flutter_flow_icon_button.dart';
-// import '../flutter_flow/flutter_flow_radio_button.dart';
-// import '../flutter_flow/flutter_flow_theme.dart';
-// import '../flutter_flow/flutter_flow_util.dart';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -602,7 +599,7 @@ class _SurveyFormState extends State<SurveyForm> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(1.13, -0.3),
+                        alignment: AlignmentDirectional(0.84, -0.42),
                         child: Padding(
                           padding:
                               EdgeInsetsDirectional.fromSTEB(180, 0, 5, 40),
@@ -643,6 +640,219 @@ class _SurveyFormState extends State<SurveyForm> {
                           ),
                         ),
                       ),
+                      Align(
+                        alignment: AlignmentDirectional(0.84, -0.42),
+                        child: Padding(
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(180, 0, 5, 40),
+                          child: TextFormField(
+                            controller: textController9,
+                            obscureText: false,
+                            decoration: InputDecoration(
+                              isDense: true,
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Colors.black,
+                                  width: 1,
+                                ),
+                                borderRadius: const BorderRadius.only(
+                                  topLeft: Radius.circular(4.0),
+                                  topRight: Radius.circular(4.0),
+                                ),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Colors.black,
+                                  width: 1,
+                                ),
+                                borderRadius: const BorderRadius.only(
+                                  topLeft: Radius.circular(4.0),
+                                  topRight: Radius.circular(4.0),
+                                ),
+                              ),
+                              contentPadding:
+                                  EdgeInsetsDirectional.fromSTEB(50, 0, 0, 0),
+                            ),
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 14,
+                            ),
+                            textAlign: TextAlign.start,
+                            maxLines: 2,
+                          ),
+                        ),
+                      ),
+                      // Align(
+                      //   alignment: AlignmentDirectional(0.84, -0.42),
+                      //   child: Padding(
+                      //     padding:
+                      //         EdgeInsetsDirectional.fromSTEB(180, 0, 5, 40),
+                      //     child: TextFormField(
+                      //       controller: textController7,
+                      //       obscureText: false,
+                      //       decoration: InputDecoration(
+                      //         isDense: true,
+                      //         enabledBorder: OutlineInputBorder(
+                      //           borderSide: BorderSide(
+                      //             color: Colors.black,
+                      //             width: 1,
+                      //           ),
+                      //           borderRadius: const BorderRadius.only(
+                      //             topLeft: Radius.circular(4.0),
+                      //             topRight: Radius.circular(4.0),
+                      //           ),
+                      //         ),
+                      //         focusedBorder: OutlineInputBorder(
+                      //           borderSide: BorderSide(
+                      //             color: Colors.black,
+                      //             width: 1,
+                      //           ),
+                      //           borderRadius: const BorderRadius.only(
+                      //             topLeft: Radius.circular(4.0),
+                      //             topRight: Radius.circular(4.0),
+                      //           ),
+                      //         ),
+                      //         contentPadding:
+                      //             EdgeInsetsDirectional.fromSTEB(50, 0, 0, 0),
+                      //       ),
+                      //       style: TextStyle(
+                      //         fontFamily: 'Poppins',
+                      //         fontSize: 14,
+                      //       ),
+                      //       textAlign: TextAlign.start,
+                      //       maxLines: 2,
+                      //     ),
+                      //   ),
+                      // ),
+                      // Align(
+                      //   alignment: AlignmentDirectional(1.13, -0.3),
+                      //   child: Padding(
+                      //     padding:
+                      //         EdgeInsetsDirectional.fromSTEB(180, 0, 5, 40),
+                      //     child: TextFormField(
+                      //       controller: textController8,
+                      //       obscureText: false,
+                      //       decoration: InputDecoration(
+                      //         isDense: true,
+                      //         enabledBorder: OutlineInputBorder(
+                      //           borderSide: BorderSide(
+                      //             color: Colors.black,
+                      //             width: 1,
+                      //           ),
+                      //           borderRadius: const BorderRadius.only(
+                      //             topLeft: Radius.circular(4.0),
+                      //             topRight: Radius.circular(4.0),
+                      //           ),
+                      //         ),
+                      //         focusedBorder: OutlineInputBorder(
+                      //           borderSide: BorderSide(
+                      //             color: Colors.black,
+                      //             width: 1,
+                      //           ),
+                      //           borderRadius: const BorderRadius.only(
+                      //             topLeft: Radius.circular(4.0),
+                      //             topRight: Radius.circular(4.0),
+                      //           ),
+                      //         ),
+                      //         contentPadding:
+                      //             EdgeInsetsDirectional.fromSTEB(50, 0, 0, 0),
+                      //       ),
+                      //       style: TextStyle(
+                      //         fontFamily: 'Poppins',
+                      //         fontSize: 14,
+                      //       ),
+                      //       textAlign: TextAlign.start,
+                      //       maxLines: 2,
+                      //     ),
+                      //   ),
+                      // ),
+                      // Align(
+                      //   alignment: AlignmentDirectional(1.13, -0.3),
+                      //   child: Padding(
+                      //     padding:
+                      //         EdgeInsetsDirectional.fromSTEB(180, 0, 5, 40),
+                      //     child: TextFormField(
+                      //       controller: textController8,
+                      //       obscureText: false,
+                      //       decoration: InputDecoration(
+                      //         isDense: true,
+                      //         enabledBorder: OutlineInputBorder(
+                      //           borderSide: BorderSide(
+                      //             color: Colors.black,
+                      //             width: 1,
+                      //           ),
+                      //           borderRadius: const BorderRadius.only(
+                      //             topLeft: Radius.circular(4.0),
+                      //             topRight: Radius.circular(4.0),
+                      //           ),
+                      //         ),
+                      //         focusedBorder: OutlineInputBorder(
+                      //           borderSide: BorderSide(
+                      //             color: Colors.black,
+                      //             width: 1,
+                      //           ),
+                      //           borderRadius: const BorderRadius.only(
+                      //             topLeft: Radius.circular(4.0),
+                      //             topRight: Radius.circular(4.0),
+                      //           ),
+                      //         ),
+                      //         contentPadding:
+                      //             EdgeInsetsDirectional.fromSTEB(50, 0, 0, 0),
+                      //       ),
+                      //       style: TextStyle(
+                      //         fontFamily: 'Poppins',
+                      //         fontSize: 14,
+                      //       ),
+                      //       textAlign: TextAlign.start,
+                      //       maxLines: 2,
+                      //     ),
+                      //   ),
+                      // ),
+                      // // Align(
+                      // Align(
+                      //   alignment: AlignmentDirectional(0.74, -0.16),
+                      //   child: Padding(
+                      //     padding:
+                      //         EdgeInsetsDirectional.fromSTEB(180, 0, 5, 40),
+                      //     child: TextFormField(
+                      //       controller: textController9,
+                      //       obscureText: false,
+                      //       decoration: InputDecoration(
+                      //         isDense: true,
+                      //         enabledBorder: OutlineInputBorder(
+                      //           borderSide: BorderSide(
+                      //             color: Colors.black,
+                      //             width: 1,
+                      //           ),
+                      //           borderRadius: const BorderRadius.only(
+                      //             topLeft: Radius.circular(4.0),
+                      //             topRight: Radius.circular(4.0),
+                      //           ),
+                      //         ),
+                      //         focusedBorder: OutlineInputBorder(
+                      //           borderSide: BorderSide(
+                      //             color: Colors.black,
+                      //             width: 1,
+                      //           ),
+                      //           borderRadius: const BorderRadius.only(
+                      //             topLeft: Radius.circular(4.0),
+                      //             topRight: Radius.circular(4.0),
+                      //           ),
+                      //         ),
+                      //         contentPadding:
+                      //             EdgeInsetsDirectional.fromSTEB(50, 0, 0, 0),
+                      //       ),
+                      //       style: TextStyle(
+                      //         fontFamily: 'Poppins',
+                      //         color: Colors.black,
+                      //         fontSize: 14,
+                      //       ),
+                      //       textAlign: TextAlign.start,
+                      //       maxLines: 2,
+                      //       keyboardType: TextInputType.number,
+                      //     ),
+                      //   ),
+                      // ),
                       Align(
                         alignment: AlignmentDirectional(0.74, -0.16),
                         child: Padding(
@@ -687,7 +897,6 @@ class _SurveyFormState extends State<SurveyForm> {
                           ),
                         ),
                       ),
-                      // Align(
                       //   alignment: AlignmentDirectional(0.88, -0.05),
                       //   child: FlutterFlowRadioButton(
                       //     options: ['Female'],

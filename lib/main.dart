@@ -34,8 +34,8 @@ class MyApp extends StatelessWidget {
         // "/": (context) => LoginPage(),
         // "/home": (context) => Homepage(),
         "/registration": (context) => registration(),
-        "/login": (context) =>  LoginPage(),
-        "/Splash": (context) => SplashScreen(),
+        // "/login": (context) =>  LoginPage(),
+        // "/Splash": (context) => SplashScreen(),
       },
     );
   }

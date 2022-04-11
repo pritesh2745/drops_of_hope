@@ -1,17 +1,20 @@
-
 import 'package:app1/screen/homepage1.dart';
 import 'package:app1/screen/homepage2p.dart';
 import 'package:app1/screen/homepage3.dart';
+import 'package:app1/screen/homepage4.dart';
 import 'package:bottom_bar/bottom_bar.dart';
 import 'package:flutter/material.dart';
 
-
 class Home extends StatefulWidget {
+  String userName;
+  Home(this.userName);
   @override
-  _HomeState createState() => _HomeState();
+  _HomeState createState() => _HomeState(userName);
 }
 
 class _HomeState extends State<Home> {
+  String userName;
+  _HomeState(this.userName);
   int _currentPage = 0;
   final _pageController = PageController();
 
@@ -21,20 +24,12 @@ class _HomeState extends State<Home> {
       body: PageView(
         controller: _pageController,
         children: [
-          Container(
-
-          child: GridofDonor()
-          ),
-          Container(
-           child: SurveyForm()
-           ),
-          Container(
-            child: HomePageWidget()
-          
-          ),
-          Container(
+          Container(child: GridofDonor(userName)),
+          Container(child: SurveyForm()),
+          Container(child: HomePageWidget()),
+          Container(child: HomePageWidget1(userName),
 // child: Profile(),
-          ),
+              ),
         ],
         onPageChanged: (index) {
           setState(() => _currentPage = index);

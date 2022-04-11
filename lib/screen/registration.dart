@@ -53,16 +53,35 @@
 //   }
 // }
 
-import 'package:app1/pages/login_page.dart';
+
 import 'package:app1/screen/SplashScreen.dart';
+import 'package:app1/screen/homepage1.dart';
+import 'package:app1/screen/login_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-class registration extends StatelessWidget {
+class registration extends StatefulWidget {
+  const registration({Key? key}) : super(key: key);
+
+  @override
+  _registrationState createState() => _registrationState();
+}
+
+// class _registrationState extends State<registration> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+
+//     );
+//   }
+// }
+class _registrationState extends State<registration> {
+  TextEditingController _nameFieldController = new TextEditingController();
+  TextEditingController _userName = new TextEditingController();
   // const ragistration({Key? key}) : super(key: key);
   FirebaseAuth auth = FirebaseAuth.instance;
 
-  void signup(BuildContext context , String username, String password) async {
+  void signup(BuildContext context, String username, String password) async {
     try {
       await auth.createUserWithEmailAndPassword(
           email: username, password: password);
@@ -73,10 +92,10 @@ class registration extends StatelessWidget {
     }
   }
 
-  late String username, password;
+  late String username, password, fullname;
   @override
   Widget build(BuildContext context) {
-      Widget bigCircle = new Container(
+    Widget bigCircle = new Container(
       width: 300.0,
       height: 300.0,
       decoration: new BoxDecoration(
@@ -85,7 +104,6 @@ class registration extends StatelessWidget {
       ),
     );
     return Scaffold(
-      
       // appBar: AppBar(
       //   backgroundColor: Color.fromARGB(255, 102, 72, 172),
       // ),
@@ -97,15 +115,14 @@ class registration extends StatelessWidget {
 //              height: 300.0,
 //              decoration: new BoxDecoration(color: Colors.red,shape: BoxShape.circle,),
 //            ),
- 
-          
+
 //             // Container(
 //             //   child: Image.asset(
 //             //     "assets/images/photo2.png",
 //             //     fit: BoxFit.cover,
 //             //   ),
 //             // ),
-            
+
 //             Container(
 //               margin: EdgeInsets.symmetric(horizontal: 20, vertical: 7),
 //               child: TextFormField(
@@ -185,14 +202,10 @@ class registration extends StatelessWidget {
 //               child: Text("Sign up"),
 //               style: TextButton.styleFrom(minimumSize: Size(150, 40)),
 //               onPressed: () {
-                
+
 //                 // main vastu
 
-
-//                 // signup(context, username,password);
-
-
-
+//            // signup(context, username,password);
 
 //  Navigator.of(context).pushNamed("/login");
 
@@ -203,232 +216,219 @@ class registration extends StatelessWidget {
 //           ],
 //         ),
 
-
-
- 
-            child: Column(
+          child: Column(
+        children: [
+          Container(
+            child: Center(
+                child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
-                
-                 
-                  child: Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Container(
-                         
-                            child: Image.asset(
-                              "assets/images/undraw_circles_y7s2.png",
-                              height: 300,
-                              width: 500,
-                              fit: BoxFit.contain,
-                              
-                            ),
-                          ),
-
-
-                          // Container(
-                          //   margin: EdgeInsets.only(right: 20, top: 20),
-                          //   alignment: Alignment.bottomRight,
-                          //   child: Text(
-                          //     "Register",
-                          //     style: TextStyle(
-                          //         fontSize: 20,
-                          //         color: Color.fromARGB(255, 95, 95, 95)
-                          //     ),
-                          //   ),
-                          // )
-                        ],
-                      )
+                  child: Image.asset(
+                    "assets/images/undraw_circles_y7s2.png",
+                    height: 300,
+                    width: 500,
+                    fit: BoxFit.contain,
                   ),
                 ),
 
-                Container(
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.only(left: 20, right: 20, top: 40),
-                  padding: EdgeInsets.only(left: 20, right: 20),
-                  height: 54,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50),
-                    color: Colors.grey[200],
-                    boxShadow: [
-                      BoxShadow(
-                          offset: Offset(0, 10),
-                          blurRadius: 50,
-                          color: Color(0xffEEEEEE)
-                      ),
-                    ],
-                  ),
-                  child: TextField(
-                    cursorColor: Color.fromARGB(255, 156, 154, 154),
-                    decoration: InputDecoration(
-                      icon: Icon(
-                        Icons.person,
-                         color: Color.fromARGB(255, 114, 113, 113),
-                      ),
-                      hintText: "Full Name",
-                      enabledBorder: InputBorder.none,
-                      focusedBorder: InputBorder.none,
-                    ),
-                  ),
+                // Container(
+                //   margin: EdgeInsets.only(right: 20, top: 20),
+                //   alignment: Alignment.bottomRight,
+                //   child: Text(
+                //     "Register",
+                //     style: TextStyle(
+                //         fontSize: 20,
+                //         color: Color.fromARGB(255, 95, 95, 95)
+                //     ),
+                //   ),
+                // )
+              ],
+            )),
+          ),
+          Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.only(left: 20, right: 20, top: 40),
+            padding: EdgeInsets.only(left: 20, right: 20),
+            height: 54,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(50),
+              color: Colors.grey[200],
+              boxShadow: [
+                BoxShadow(
+                    offset: Offset(0, 10),
+                    blurRadius: 50,
+                    color: Color(0xffEEEEEE)),
+              ],
+            ),
+            child: TextFormField(
+              // maxLength: 16,
+              // controller: _nameFieldController,
+              controller: _userName,
+              // onChanged: (value) {
+              //   fullname = value;
+              // },
+              cursorColor: Color.fromARGB(255, 156, 154, 154),
+              decoration: InputDecoration(
+                icon: Icon(
+                  Icons.person,
+                  color: Color.fromARGB(255, 114, 113, 113),
                 ),
+                hintText: "Full Name",
+                enabledBorder: InputBorder.none,
+                focusedBorder: InputBorder.none,
+              ),
+            ),
+          ),
+          Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.only(left: 20, right: 20, top: 20),
+            padding: EdgeInsets.only(left: 20, right: 20),
+            height: 54,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(50),
+              color: Colors.grey[200],
+              boxShadow: [
+                BoxShadow(
+                    offset: Offset(0, 10),
+                    blurRadius: 50,
+                    color: Color(0xffEEEEEE)),
+              ],
+            ),
+            child: TextFormField(
+              cursorColor: Color.fromARGB(255, 156, 154, 154),
+              onChanged: (value) {
+                username = value;
+              },
+              decoration: InputDecoration(
+                icon: Icon(
+                  Icons.email,
+                  color: Color.fromARGB(255, 114, 113, 113),
+                ),
+                hintText: "Email",
+                enabledBorder: InputBorder.none,
+                focusedBorder: InputBorder.none,
+              ),
+            ),
+          ),
+          Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.only(left: 20, right: 20, top: 20),
+            padding: EdgeInsets.only(left: 20, right: 20),
+            height: 54,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(50),
+              color: Color(0xffEEEEEE),
+              boxShadow: [
+                BoxShadow(
+                    offset: Offset(0, 20),
+                    blurRadius: 100,
+                    color: Color(0xffEEEEEE)),
+              ],
+            ),
+            child: TextField(
+              cursorColor: Color.fromARGB(255, 156, 154, 154),
+              decoration: InputDecoration(
+                focusColor: Color.fromARGB(255, 245, 31, 31),
+                icon: Icon(
+                  Icons.phone,
+                  color: Color.fromARGB(255, 114, 113, 113),
+                ),
+                hintText: "Phone Number",
+                enabledBorder: InputBorder.none,
+                focusedBorder: InputBorder.none,
+              ),
+            ),
+          ),
+          Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.only(left: 20, right: 20, top: 20),
+            padding: EdgeInsets.only(left: 20, right: 20),
+            height: 54,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(50),
+              color: Color(0xffEEEEEE),
+              boxShadow: [
+                BoxShadow(
+                    offset: Offset(0, 20),
+                    blurRadius: 100,
+                    color: Color(0xffEEEEEE)),
+              ],
+            ),
+            child: TextFormField(
+              onChanged: (value) {
+                password = value;
+              },
+              cursorColor: Color.fromARGB(255, 156, 154, 154),
+              decoration: InputDecoration(
+                focusColor: Color.fromARGB(255, 245, 31, 31),
+                icon: Icon(
+                  Icons.vpn_key,
+                  color: Color.fromARGB(255, 114, 113, 113),
+                ),
+                hintText: "Enter Password",
+                enabledBorder: InputBorder.none,
+                focusedBorder: InputBorder.none,
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              // Write Click Listener Code Here.
 
-                Container(
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.only(left: 20, right: 20, top: 20),
-                  padding: EdgeInsets.only(left: 20, right: 20),
-                  height: 54,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50),
-                    color: Colors.grey[200],
-                    boxShadow: [
-                      BoxShadow(
-                          offset: Offset(0, 10),
-                          blurRadius: 50,
-                          color: Color(0xffEEEEEE)
-                      ),
-                    ],
-                  ),
-                  child: TextField(
-                    cursorColor: Color.fromARGB(255, 156, 154, 154),
-                    decoration: InputDecoration(
-                      icon: Icon(
-                        Icons.email,
-                       color: Color.fromARGB(255, 114, 113, 113),
-                      ),
-                      hintText: "Email",
-                      enabledBorder: InputBorder.none,
-                      focusedBorder: InputBorder.none,
-                    ),
-                  ),
-                ),
+              // important
+              // signup(context, username,password);
+              // Navigator.of(context).push(MaterialPageRoute(
+              //     builder: (context) => GridofDonor(userName: _userName)));
+              
+              
+              // Navigator.pop(context, _userName.text);
+              // Navigator.pop(context, _nameFieldController.text);
 
-                Container(
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.only(left: 20, right: 20, top: 20),
-                  padding: EdgeInsets.only(left: 20, right: 20),
-                  height: 54,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50),
-                    color: Color(0xffEEEEEE),
-                    boxShadow: [
-                      BoxShadow(
-                          offset: Offset(0, 20),
-                          blurRadius: 100,
-                          color: Color(0xffEEEEEE)
-                      ),
-                    ],
-                  ),
-                  child: TextField(
-                     cursorColor: Color.fromARGB(255, 156, 154, 154),
-                    decoration: InputDecoration(
-                      focusColor: Color.fromARGB(255, 245, 31, 31),
-                      icon: Icon(
-                        Icons.phone,
-                         color: Color.fromARGB(255, 114, 113, 113),
-                      ),
-                      hintText: "Phone Number",
-                      enabledBorder: InputBorder.none,
-                      focusedBorder: InputBorder.none,
-                    ),
-                  ),
-                ),
-                Container(
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.only(left: 20, right: 20, top: 20),
-                  padding: EdgeInsets.only(left: 20, right: 20),
-                  height: 54,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50),
-                    color: Color(0xffEEEEEE),
-                    boxShadow: [
-                      BoxShadow(
-                          offset: Offset(0, 20),
-                          blurRadius: 100,
-                          color: Color(0xffEEEEEE)
-                      ),
-                    ],
-                  ),
-                  child: TextField(
-                  cursorColor: Color.fromARGB(255, 156, 154, 154),
-                    decoration: InputDecoration(
-                      focusColor: Color.fromARGB(255, 245, 31, 31),
-                      icon: Icon(
-                        Icons.vpn_key,
-                        color: Color.fromARGB(255, 114, 113, 113),
-                      ),
-                      hintText: "Enter Password",
-                      enabledBorder: InputBorder.none,
-                      focusedBorder: InputBorder.none,
-                    ),
-                  ),
-                ),
 
+              // Navigator.of(context).pushNamed("/login");
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => LoginPage(_userName.text)));
+            },
+            child: Text(
+              "REGISTER",
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 10, bottom: 10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("Have Already Member?  "),
                 GestureDetector(
+                  child: Text(
+                    "Login Now",
+                    style: TextStyle(color: Color.fromARGB(255, 64, 19, 146)),
+                  ),
                   onTap: () {
-                    // Write Click Listener Code Here.
+                    // Write Tap Code Here.
+
+                    // Navigator.of(context).pushNamed("/login");
+
+                    Navigator.of(context).pushNamed("/login");
+                    print("hello folks");
+
+                    // signup();
+
+                    // ElevatedButton(
+                    //             child: Text("Login"),
+                    //             style: TextButton.styleFrom(minimumSize: Size(150, 40)),
+
+                    //           )
                   },
-                  child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.only(left: 20, right: 20, top: 40),
-                    padding: EdgeInsets.only(left: 20, right: 20),
-                    height: 54,
-                    decoration: BoxDecoration(
-                        gradient: LinearGradient(colors: [(Color.fromARGB(255, 112, 92, 167)), Color.fromARGB(255, 112, 92, 167)],
-                          begin: Alignment.centerLeft,
-                          end: Alignment.centerRight
-                      ),
-                      borderRadius: BorderRadius.circular(50),
-                      color: Colors.grey[200],
-                      boxShadow: [
-                        BoxShadow(
-                            offset: Offset(0, 10),
-                            blurRadius: 50,
-                            color: Color(0xffEEEEEE)
-                        ),
-                      ],
-                    ),
-                    child: Text(
-                      "REGISTER",
-                      style: TextStyle(
-                          color: Colors.white
-                      ),
-                    ),
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.only(top: 10, bottom: 10),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text("Have Already Member?  "),
-                      GestureDetector(
-                        child: Text(
-                          "Login Now",
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 64, 19, 146)
-                          ),
-                      
-                        ),
-                        onTap: () {
-                          // Write Tap Code Here.
-
- Navigator.of(context).pushNamed("/login");
-
-                Navigator.of(context).pushNamed("/login");
-                print("hello folks");
-
-                        
-                        },
-                      )
-                    ],
-                  ),
                 )
               ],
-            )
-        
-      ),
+            ),
+          )
+        ],
+      )),
     );
   }
 }

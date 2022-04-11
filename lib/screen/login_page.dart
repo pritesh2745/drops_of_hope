@@ -1,15 +1,18 @@
+import 'package:app1/screen/SplashScreen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
-  
+  String userName;
+  LoginPage(this.userName);
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<LoginPage> createState() => _LoginPageState(userName);
 }
 
 class _LoginPageState extends State<LoginPage> {
   FirebaseAuth auth = FirebaseAuth.instance;
-
+  String userName;
+  _LoginPageState(this.userName);
   void signup() async {
     try {
       await auth.createUserWithEmailAndPassword(
@@ -19,7 +22,6 @@ class _LoginPageState extends State<LoginPage> {
       print(e);
     }
   }
-  
 
   void signin() async {
     try {
@@ -70,7 +72,7 @@ class _LoginPageState extends State<LoginPage> {
             //         decoration: InputDecoration(
             //           hintText: "Enter password",
             //           labelText: "Password",
-                      
+
             //         ),
             //       ),
             //       SizedBox(
@@ -96,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
             //     ],
             //   ),
             // ),
-             Container(
+            Container(
               alignment: Alignment.center,
               margin: EdgeInsets.only(left: 20, right: 20, top: 70),
               padding: EdgeInsets.only(left: 20, right: 20),
@@ -108,8 +110,7 @@ class _LoginPageState extends State<LoginPage> {
                   BoxShadow(
                       offset: Offset(0, 10),
                       blurRadius: 50,
-                      color: Color(0xffEEEEEE)
-                  ),
+                      color: Color(0xffEEEEEE)),
                 ],
               ),
               child: TextField(
@@ -126,9 +127,6 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
 
-
-            
-
             Container(
               alignment: Alignment.center,
               margin: EdgeInsets.only(left: 20, right: 20, top: 20),
@@ -141,18 +139,16 @@ class _LoginPageState extends State<LoginPage> {
                   BoxShadow(
                       offset: Offset(0, 20),
                       blurRadius: 100,
-                      color: Color(0xffEEEEEE)
-                  ),
+                      color: Color(0xffEEEEEE)),
                 ],
               ),
-              
               child: TextField(
                 cursorColor: Color.fromARGB(255, 156, 154, 154),
                 decoration: InputDecoration(
                   focusColor: Color.fromARGB(255, 245, 31, 31),
                   icon: Icon(
                     Icons.vpn_key,
-                    color:  Color.fromARGB(255, 114, 113, 113),
+                    color: Color.fromARGB(255, 114, 113, 113),
                   ),
                   hintText: "Enter Password",
                   enabledBorder: InputBorder.none,
@@ -181,36 +177,42 @@ class _LoginPageState extends State<LoginPage> {
                 padding: EdgeInsets.only(left: 20, right: 20),
                 height: 54,
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(colors: [(Color.fromARGB(255, 112, 92, 167)), Color.fromARGB(255, 112, 92, 167)],
-                      begin: Alignment.centerLeft,
-                      end: Alignment.centerRight
-                  ),
+                  gradient: LinearGradient(colors: [
+                    (Color.fromARGB(255, 112, 92, 167)),
+                    Color.fromARGB(255, 112, 92, 167)
+                  ], begin: Alignment.centerLeft, end: Alignment.centerRight),
                   borderRadius: BorderRadius.circular(50),
                   color: Colors.grey[200],
                   boxShadow: [
                     BoxShadow(
                         offset: Offset(0, 10),
                         blurRadius: 50,
-                        color: Color(0xffEEEEEE)
-                    ),
+                        color: Color(0xffEEEEEE)),
                   ],
                 ),
                 child: GestureDetector(
-                onTap: () {
-                  // Write Click Listener Code Here
-                   signup();
-                      Navigator.of(context).pushNamed("/Splash");
-                      print("hello folks");
-                },
-                child: Text(
-                  "LOGIN",
-                  style: TextStyle(
-                      color: Colors.white
+                  onTap: () {
+                    // Write Click Listener Code Here
+                    //       ElevatedButton(
+                    //         child: Text("Login"),
+                    //         style: TextButton.styleFrom(minimumSize: Size(150, 40)),
+                    //         onPressed: () {
+                    //           signup();
+                    //           Navigator.of(context).pushNamed("/Splash");
+                    //           print("hello folks");
+                    //         },
+                    //       )
+                    signup();
+                    // Navigator.of(context).pushNamed("/Splash");
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => SplashScreen(userName)));
+                    print("hello folks");
+                  },
+                  child: Text(
+                    "LOGIN",
+                    style: TextStyle(color: Colors.white),
                   ),
                 ),
-              ),
-               
-                
               ),
             ),
             Container(
@@ -222,13 +224,9 @@ class _LoginPageState extends State<LoginPage> {
                   GestureDetector(
                     child: Text(
                       "Register Now",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 64, 19, 146)
-                      ),
+                      style: TextStyle(color: Color.fromARGB(255, 64, 19, 146)),
                     ),
                     onTap: () {
-
-                       
                       // Write Tap Code Here.
                       // Navigator.push(
                       //   context,
@@ -236,7 +234,6 @@ class _LoginPageState extends State<LoginPage> {
                       //     builder: (context) => SignUpScreen(),
                       //   )
                       // );
-
                     },
                   )
                 ],
