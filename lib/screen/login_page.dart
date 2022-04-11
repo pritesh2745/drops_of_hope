@@ -168,9 +168,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
 
             GestureDetector(
-              onTap: () {
-                // Write Click Listener Code Here.
-              },
+           
               child: Container(
                 alignment: Alignment.center,
                 margin: EdgeInsets.only(left: 20, right: 20, top: 70),

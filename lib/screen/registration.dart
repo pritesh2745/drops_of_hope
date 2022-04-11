@@ -373,6 +373,7 @@ class _registrationState extends State<registration> {
               ),
             ),
           ),
+           
           GestureDetector(
             onTap: () {
               // Write Click Listener Code Here.
@@ -388,13 +389,34 @@ class _registrationState extends State<registration> {
 
 
               // Navigator.of(context).pushNamed("/login");
+              
               Navigator.of(context)
                   .push(MaterialPageRoute(builder: (context) => LoginPage(_userName.text)));
             },
+           child:Container(
+                  alignment: Alignment.center,
+                margin: EdgeInsets.only(left: 20, right: 20, top: 70),
+                padding: EdgeInsets.only(left: 20, right: 20),
+                height: 54,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(colors: [
+                    (Color.fromARGB(255, 112, 92, 167)),
+                    Color.fromARGB(255, 112, 92, 167)
+                  ], begin: Alignment.centerLeft, end: Alignment.centerRight),
+                  borderRadius: BorderRadius.circular(50),
+                  color: Colors.grey[200],
+                  boxShadow: [
+                    BoxShadow(
+                        offset: Offset(0, 10),
+                        blurRadius: 50,
+                        color: Color(0xffEEEEEE)),
+                  ],
+                ),
             child: Text(
               "REGISTER",
               style: TextStyle(color: Colors.white),
             ),
+           ),
           ),
           Container(
             margin: EdgeInsets.only(top: 10, bottom: 10),

@@ -35,25 +35,39 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Center(
             child: Column(
               children: [
-                const SizedBox(
-                  height: 300,
-                ),
+              
                  // ignore: prefer_const_constructors
                
-
+ const SizedBox(
+                  height: 50,
+                ),
                    Container(
+                     
                      child: Image(
                               image: AssetImage(
-                                'assets/images/blog-4.png',
+                                'assets/images/bloodphoto.jpg',
                               ),
-                              height: 300.0,
-                              width: 300.0,
+                              height: 320.0,
+                              width: 320.0,
                             ),
                    ),
+                      const SizedBox(
+                  height: 50,
+                ),
                 Center(
                     
+                    child: const 
+                    Text("Blood Donation App",
                     
-                    child: const Text("Blood Donation App")),
+                      style: TextStyle(
+                                      fontFamily: 'Ubuntu',
+                                      color: Color.fromARGB(255, 11, 11, 11),
+                                      fontSize: 30,
+                                      fontWeight: FontWeight.w300,),
+                    )
+
+                    
+                    ),
                  
                 // SvgPicture.asset(
                 //   'assets/images/BestDesign.svg',
@@ -61,7 +75,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 //   alignment: Alignment.center,
                 // ),
                 const SizedBox(
-                  height: 230,
+                  height: 30,
                 ),
                 Lottie.asset("assets/animations/lf30_editor_7io4xwvy.json",
                     height: 300)

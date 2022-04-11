@@ -48,7 +48,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
         centerTitle: true,
         elevation: 2,
       ),
-      backgroundColor: Color.fromARGB(255, 153, 154, 126),
+      backgroundColor: Color.fromARGB(100, 19, 19, 23),
       body: SafeArea(
         child: GestureDetector(
           onTap: () => FocusScope.of(context).unfocus(),
@@ -64,14 +64,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               Align(
                 alignment: AlignmentDirectional(-0.09, 0.79),
                 child: Text(
-                  '24   MALE ',
+                  '19   MALE ',
                   // style: FlutterFlowTheme.of(context).bodyText1,
                 ),
               ),
               Align(
                 alignment: AlignmentDirectional(-0.01, 0.89),
                 child: Text(
-                  '24   MALE ',
+                  '19   MALE ',
                   // style: FlutterFlowTheme.of(context).bodyText1,
                 ),
               ),
@@ -89,14 +89,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               Align(
                 alignment: AlignmentDirectional(0.01, 0.78),
                 child: Text(
-                  '24   MALE ',
+                  '19   FEMALE ',
                   // style: FlutterFlowTheme.of(context).bodyText1,
                 ),
               ),
               Align(
                 alignment: AlignmentDirectional(0.03, 0.37),
                 child: Text(
-                  '24   MALE ',
+                  '19   MALE ',
                   // style: FlutterFlowTheme.of(context).bodyText1,
                 ),
               ),
@@ -129,7 +129,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         padding:
                             EdgeInsets.fromLTRB(10, 25, 196, 10),
                         child: Image.asset(
-                          "assests/images/hey.png",
+                          "assets/images/profile.jpg",
                           width: 75,
                           height: 90,
                           fit: BoxFit.cover,
@@ -139,7 +139,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         padding:
                            EdgeInsets.fromLTRB(10, 25, 196, 10),
                         child: Image.asset(
-                  "assests/images/hey.png",
+                  "assets/images/profile.jpg",
                           width: 75,
                           height: 90,
                           fit: BoxFit.cover, 
@@ -149,7 +149,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         padding:
                           EdgeInsets.fromLTRB(10, 25, 196, 10),
                         child: Image.asset(
-                           "assests/images/hey.png",
+                           "assets/images/profile.jpg",
                           width: 75,
                           height: 90,
                           fit: BoxFit.cover,
@@ -162,14 +162,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               Align(
                 alignment: AlignmentDirectional(0.02, 0.38),
                 child: Text(
-                  '24   MALE ',
+                  '19   MALE ',
                   // style: FlutterFlowTheme.of(context).bodyText1,
                 ),
               ),
               Align(
                 alignment: AlignmentDirectional(0.2, 0.3),
                 child: Text(
-                  'Kathey Bates',
+                  'Rutesh Zalavadia',
                   style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 16,
@@ -179,14 +179,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               Align(
                 alignment: AlignmentDirectional(-0.01, -0.06),
                 child: Text(
-                  '24   MALE ',
+                  '19   MALE ',
                   // style: FlutterFlowTheme.of(context).bodyText1,
                 ),
               ),
               Align(
                 alignment: AlignmentDirectional(0.17, -0.14),
                 child: Text(
-                  'Kathey Bates',
+                  'Pritesh Vandra',
                   style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 16,
@@ -224,7 +224,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               Align(
                 alignment: AlignmentDirectional(0.17, 0.71),
                 child: Text(
-                  'Kathey Bates',
+                  'Riya Shah',
                   style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 16,

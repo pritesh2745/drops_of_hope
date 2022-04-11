@@ -25,7 +25,7 @@ class _HomeState extends State<Home> {
         controller: _pageController,
         children: [
           Container(child: GridofDonor(userName)),
-          Container(child: SurveyForm()),
+          Container(child: DonorDetailsWidget()),
           Container(child: HomePageWidget()),
           Container(child: HomePageWidget1(userName),
 // child: Profile(),

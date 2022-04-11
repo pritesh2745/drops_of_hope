@@ -53,6 +53,7 @@ dependencies:
   shared_preferences: ^2.0.13
   timeago: ^3.2.2
   url_launcher: ^6.0.20
+  cloud_firestore: any
 
 
 # cupertino_icons: ^1.0.2

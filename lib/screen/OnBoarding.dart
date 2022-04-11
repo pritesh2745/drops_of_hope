@@ -98,7 +98,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                     )),
                                 SizedBox(height: 15.0),
                                 Text(
-                                  'Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore et.',
+                                  'Encourage your friends and family to become regular blood donors. Volunteer with the blood service to reach out to members of your community, provide care to donors, and help manage blood donation sessions/drives.',
                                   style: TextStyle(
                                     fontSize: 16,
                                     color: Colors.redAccent,
@@ -130,7 +130,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           ),
                           SizedBox(height: 15.0),
                           Text(
-                            'Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore et.',
+                            'Digital platform for collecting donations to be distributed to people in need we build strength stability and self relience',
                             style: TextStyle(
                               fontSize: 16,
                               color: Colors.redAccent,
@@ -155,7 +155,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           ),
                           SizedBox(height: 30.0),
                           Text(
-                            'Get a new experience\nof imagination',
+                            'Get a new experience of imagination',
                             style: TextStyle(
                               fontSize: 20,
                               color: Colors.red,
@@ -163,7 +163,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           ),
                           SizedBox(height: 15.0),
                           Text(
-                            'Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore et.',
+                            'Here we propose a new and efficient way to overcome such outline.',
                             style: TextStyle(
                               fontSize: 16,
                               color: Colors.redAccent,
@@ -238,6 +238,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
+                    
                   ),
                 ),
               ),
