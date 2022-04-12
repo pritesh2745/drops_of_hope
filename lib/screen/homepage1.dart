@@ -1,5 +1,8 @@
 import 'dart:io';
 
+import 'package:app1/screen/homepage2p.dart';
+import 'package:app1/screen/homepage3.dart';
+import 'package:app1/screen/homepage4.dart';
 import 'package:flutter/material.dart';
 
 // void main() => runApp(GridofDonor());
@@ -50,24 +53,37 @@ class GridofDonor extends StatelessWidget {
                         ),
                       ),
                       ListTile(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: ((context) => GridofDonor(userName))));
+                        },
                         leading: Icon(Icons.home),
                         title: Text('Home'),
                       ),
                       ListTile(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: ((context) =>
+                                  HomePageWidget1(userName))));
+                        },
                         leading: Icon(Icons.account_circle_rounded),
                         title: Text('Profile'),
                       ),
                       ListTile(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => DonorDetailsWidget()));
+                        },
                         leading: Icon(Icons.favorite),
-                        title: Text('Orders'),
+                        title: Text('Survey Form'),
                       ),
                       ListTile(
-                        onTap: () {},
+                        onTap: () {
+                           Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => HomePageWidget() ));
+                        },
                         leading: Icon(Icons.settings),
-                        title: Text('Settings'),
+                        title: Text('Dashboard'),
                       ),
                       Spacer(),
                       DefaultTextStyle(

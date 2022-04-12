@@ -55,14 +55,14 @@ class _HomeState extends State<Home> {
             darkActiveColor: Colors.red.shade400,
           ),
           BottomBarItem(
-            icon: Icon(Icons.person),
+            icon: Icon(Icons.dashboard),
             title: Text('Account'),
             activeColor: Colors.greenAccent.shade700,
             darkActiveColor: Colors.greenAccent.shade400,
           ),
           BottomBarItem(
-            icon: Icon(Icons.settings),
-            title: Text('Settings'),
+            icon: Icon(Icons.person),
+            title: Text('Profile'),
             activeColor: Colors.orange,
           ),
         ],

@@ -44,7 +44,7 @@ class _DonorDetailsWidgetState extends State<DonorDetailsWidget> {
     print(n1);
     FirebaseFirestore.instance
         .collection('UserData')
-        .doc('abmCfjS9bBl6TY8nIRMY')
+        .doc()
         .set({
       'Name ': n2,
       'Id ': n1,
@@ -287,7 +287,7 @@ class _DonorDetailsWidgetState extends State<DonorDetailsWidget> {
                         ),
                         textAlign: TextAlign.start,
                         maxLines: 2,
-                        keyboardType: TextInputType.datetime,
+                        keyboardType: TextInputType.name,
                       ),
                     ),
                   ),
@@ -330,7 +330,7 @@ class _DonorDetailsWidgetState extends State<DonorDetailsWidget> {
                         ),
                         textAlign: TextAlign.start,
                         maxLines: 2,
-                        keyboardType: TextInputType.number,
+                        keyboardType: TextInputType.name,
                       ),
                     ),
                   ),
@@ -456,7 +456,7 @@ class _DonorDetailsWidgetState extends State<DonorDetailsWidget> {
                         ),
                         textAlign: TextAlign.start,
                         maxLines: 2,
-                        keyboardType: TextInputType.datetime,
+                        keyboardType: TextInputType.name,
                       ),
                     ),
                   ),
@@ -540,7 +540,7 @@ class _DonorDetailsWidgetState extends State<DonorDetailsWidget> {
                         ),
                         textAlign: TextAlign.start,
                         maxLines: 2,
-                        keyboardType: TextInputType.streetAddress,
+                        keyboardType: TextInputType.name,
                       ),
                     ),
                   ),
@@ -582,7 +582,7 @@ class _DonorDetailsWidgetState extends State<DonorDetailsWidget> {
                         ),
                         textAlign: TextAlign.start,
                         maxLines: 2,
-                        keyboardType: TextInputType.phone,
+                        keyboardType: TextInputType.name,
                       ),
                     ),
                   ),
@@ -707,7 +707,7 @@ class _DonorDetailsWidgetState extends State<DonorDetailsWidget> {
                         ),
                         textAlign: TextAlign.start,
                         maxLines: 2,
-                        keyboardType: TextInputType.number,
+                        keyboardType: TextInputType.name,
                       ),
                     ),
                   ),
