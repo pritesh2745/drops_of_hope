@@ -48,200 +48,577 @@ class _HomePageWidgetState extends State<HomePageWidget> {
         centerTitle: true,
         elevation: 2,
       ),
-      backgroundColor: Color.fromARGB(100, 19, 19, 23),
-      body: SafeArea(
-        child: GestureDetector(
-          onTap: () => FocusScope.of(context).unfocus(),
-          child: Stack(
-            children: [
-              Align(
-                alignment: AlignmentDirectional(-0.74, -0.34),
-                child: Text(
-                  'Recent Updates',
-                  // style: FlutterFlowTheme.of(context).bodyText1,
+      backgroundColor: Color.fromARGB(98, 242, 242, 242),
+    
+
+      body: SingleChildScrollView(
+        // controller: controller,
+       
+    
+         // Generated code for this Column Widget...
+child:Column(
+  mainAxisSize: MainAxisSize.max,
+  children: [
+    Row(
+      mainAxisSize: MainAxisSize.max,
+      children: [
+        Padding(
+          padding: EdgeInsetsDirectional.fromSTEB(16, 12, 0, 12),
+          child: Text(
+            'This Week',
+            style: TextStyle(
+                  fontFamily: 'Lexend Deca',
+                  color: Color(0xFF95A1AC),
+                  fontSize: 14,
+                  fontWeight: FontWeight.normal,
                 ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(-0.09, 0.79),
-                child: Text(
-                  '19   MALE ',
-                  // style: FlutterFlowTheme.of(context).bodyText1,
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(-0.01, 0.89),
-                child: Text(
-                  '19   MALE ',
-                  // style: FlutterFlowTheme.of(context).bodyText1,
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.04, 0.88),
-                child: Container(
-                  width: 300,
-                  height: 130,
-                  decoration: BoxDecoration(
-                    color: Color(0xFFEEEEEE),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.01, 0.78),
-                child: Text(
-                  '19   FEMALE ',
-                  // style: FlutterFlowTheme.of(context).bodyText1,
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.03, 0.37),
-                child: Text(
-                  '19   MALE ',
-                  // style: FlutterFlowTheme.of(context).bodyText1,
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(-0.01, 0.38),
-                child: Container(
-                  width: 300,
-                  height: 130,
-                  decoration: BoxDecoration(
-                    color: Color(0xFFEEEEEE),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(-0.06, -0.12),
-                child: Container(
-                  width: 300,
-                  height: 130,
-                  decoration: BoxDecoration(
-                    color: Color(0xFFEEEEEE),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding:
-                            EdgeInsets.fromLTRB(10, 25, 196, 10),
-                        child: Image.asset(
-                          "assets/images/profile.jpg",
-                          width: 75,
-                          height: 90,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      Padding(
-                        padding:
-                           EdgeInsets.fromLTRB(10, 25, 196, 10),
-                        child: Image.asset(
-                  "assets/images/profile.jpg",
-                          width: 75,
-                          height: 90,
-                          fit: BoxFit.cover, 
-                        ),
-                      ),
-                      Padding(
-                        padding:
-                          EdgeInsets.fromLTRB(10, 25, 196, 10),
-                        child: Image.asset(
-                           "assets/images/profile.jpg",
-                          width: 75,
-                          height: 90,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.02, 0.38),
-                child: Text(
-                  '19   MALE ',
-                  // style: FlutterFlowTheme.of(context).bodyText1,
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.2, 0.3),
-                child: Text(
-                  'Rutesh Zalavadia',
-                  style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 16,
-                      ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(-0.01, -0.06),
-                child: Text(
-                  '19   MALE ',
-                  // style: FlutterFlowTheme.of(context).bodyText1,
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.17, -0.14),
-                child: Text(
-                  'Pritesh Vandra',
-                  style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 16,
-                      ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.01, -0.84),
-                child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
-                  child: Container(
-                    width: 300,
-                    height: 130,
-                    decoration: BoxDecoration(
-                      color: Color(0xFFEEEEEE),
-                      borderRadius: BorderRadius.circular(10),
-                      shape: BoxShape.rectangle,
-                    ),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(-0.09, -0.74),
-                child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(60, 0, 55, 0),
-                  child: Text(
-                    '        291                     481\nAvailable          Request',
-                    style:TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 21,
-                        ),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.17, 0.71),
-                child: Text(
-                  'Riya Shah',
-                  style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 16,
-                      ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.75, -0.35),
-                child: Text(
-                  'View All',
-                  // style: FlutterFlowTheme.of(context).bodyText1,
-                ),
-              ),
-            ],
           ),
         ),
+      ],
+    ),
+    Padding(
+      padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
+      child: ListView(
+        padding: EdgeInsets.zero,
+        primary: false,
+        shrinkWrap: true,
+        scrollDirection: Axis.vertical,
+        children: [
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 8),
+            child: Container(
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 3,
+                    color: Color(0x430F1113),
+                    offset: Offset(0, 1),
+                  )
+                ],
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 4),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        // Padding(
+                        //   padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                        //   child: Text(
+                        //     'Fundraiser',
+                        //     style:TextStyle(
+                        //           fontFamily: 'Lexend Deca',
+                        //           color: Color(0xFFEF3939),
+                        //           fontSize: 14,
+                        //           fontWeight: FontWeight.w600,
+                        //         ),
+                        //   ),
+                        // ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.85,
+                    height: 1,
+                    decoration: BoxDecoration(
+                      color: Color(0xFFF1F4F8),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 4),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                          child: Text(
+                            'Charity 5K Race for a Cure',
+                            style:TextStyle(
+                                  fontFamily: 'Lexend Deca',
+                                  color: Color(0xFF090F13),
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 4),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Expanded(
+                          child: Text(
+                            'Short description goes here and can be more\nthan one line. Two lines is the best length… ',
+                            style: TextStyle(
+                                  fontFamily: 'Lexend Deca',
+                                  color: Color(0xFF95A1AC),
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.normal,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 8),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 4),
+                         
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                      
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(24, 0, 0, 4),
+                          child: Icon(
+                            Icons.location_on_sharp,
+                            color: Color(0xFFEF3939),
+                            size: 20,
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                          child: Text(
+                            'Alamodome, San Antonio...',
+                            style: TextStyle(
+                                  fontFamily: 'Lexend Deca',
+                                  color: Color(0xFFEF3939),
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
+            child: Container(
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 3,
+                    color: Color(0x430F1113),
+                    offset: Offset(0, 1),
+                  )
+                ],
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 4),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                          child: Text(
+                            'Fundraiser',
+                            style: TextStyle(
+                                  fontFamily: 'Lexend Deca',
+                                  color: Color(0xFFEF3939),
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.85,
+                    height: 1,
+                    decoration: BoxDecoration(
+                      color: Color(0xFFF1F4F8),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 4),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                          child: Text(
+                            'Charity 5K Race for a Cure',
+                            style: TextStyle(
+                                  fontFamily: 'Lexend Deca',
+                                  color: Color(0xFF090F13),
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 4),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Expanded(
+                          child: Text(
+                            'Short description goes here and can be more\nthan one line. Two lines is the best length… ',
+                            style: TextStyle(
+                                  fontFamily: 'Lexend Deca',
+                                  color: Color(0xFF95A1AC),
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.normal,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 8),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 4),
+                         
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                      
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(24, 0, 0, 4),
+                          child: Icon(
+                            Icons.location_on_sharp,
+                            color: Color(0xFFEF3939),
+                            size: 20,
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                          child: Text(
+                            'Alamodome, San Antonio...',
+                            style: TextStyle(
+                                  fontFamily: 'Lexend Deca',
+                                  color: Color(0xFFEF3939),
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
       ),
+    ),
+    Row(
+      mainAxisSize: MainAxisSize.max,
+      children: [
+        Padding(
+          padding: EdgeInsetsDirectional.fromSTEB(16, 4, 0, 12),
+          child: Text(
+            'Next Week',
+            style: TextStyle(
+                  fontFamily: 'Lexend Deca',
+                  color: Color(0xFF95A1AC),
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500,
+                ),
+          ),
+        ),
+      ],
+    ),
+    Padding(
+      padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
+      child: ListView(
+        padding: EdgeInsets.zero,
+        primary: false,
+        shrinkWrap: true,
+        scrollDirection: Axis.vertical,
+        children: [
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 8),
+            child: Container(
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 3,
+                    color: Color(0x430F1113),
+                    offset: Offset(0, 1),
+                  )
+                ],
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 4),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                          child: Text(
+                            'Fundraiser',
+                            style: TextStyle(
+                                  fontFamily: 'Lexend Deca',
+                                  color: Color(0xFFEF3939),
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.85,
+                    height: 1,
+                    decoration: BoxDecoration(
+                      color: Color(0xFFF1F4F8),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 4),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                          child: Text(
+                            'Charity 5K Race for a Cure',
+                            style:TextStyle(
+                                  fontFamily: 'Lexend Deca',
+                                  color: Color(0xFF090F13),
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 4),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Expanded(
+                          child: Text(
+                            'Short description goes here and can be more\nthan one line. Two lines is the best length… ',
+                            style: TextStyle(
+                                  fontFamily: 'Lexend Deca',
+                                  color: Color(0xFF95A1AC),
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.normal,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 8),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 4),
+                         
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                      
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(24, 0, 0, 4),
+                          child: Icon(
+                            Icons.location_on_sharp,
+                            color: Color(0xFFEF3939),
+                            size: 20,
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                          child: Text(
+                            'Alamodome, San Antonio...',
+                            style: TextStyle(
+                                  fontFamily: 'Lexend Deca',
+                                  color: Color(0xFFEF3939),
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
+            child: Container(
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 3,
+                    color: Color(0x430F1113),
+                    offset: Offset(0, 1),
+                  )
+                ],
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 4),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                          child: Text(
+                            'Fundraiser',
+                            style: TextStyle(
+                                  fontFamily: 'Lexend Deca',
+                                  color: Color(0xFFEF3939),
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.85,
+                    height: 1,
+                    decoration: BoxDecoration(
+                      color: Color(0xFFF1F4F8),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 4),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                          child: Text(
+                            'Charity 5K Race for a Cure',
+                            style: TextStyle(
+                                  fontFamily: 'Lexend Deca',
+                                  color: Color(0xFF090F13),
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 4),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Expanded(
+                          child: Text(
+                            'Short description goes here and can be more\nthan one line. Two lines is the best length… ',
+                            style:TextStyle(
+                                  fontFamily: 'Lexend Deca',
+                                  color: Color(0xFF95A1AC),
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.normal,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 8),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 4),
+                         
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                      
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(24, 0, 0, 4),
+                          child: Icon(
+                            Icons.location_on_sharp,
+                            color: Color(0xFFEF3939),
+                            size: 20,
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                          child: Text(
+                            'Alamodome, San Antonio...',
+                            style: TextStyle(
+                                  fontFamily: 'Lexend Deca',
+                                  color: Color(0xFFEF3939),
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    ),
+  ],
+)
+,  ),
+      
     );
   }
 }

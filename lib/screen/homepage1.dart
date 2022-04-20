@@ -194,11 +194,16 @@ class GridofDonor extends StatelessWidget {
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           15, 15, 15, 15),
-                                      child: Image.asset(
-                                        'assets/images/A-.png',
-                                        width: 100,
-                                        height: 100,
-                                        fit: BoxFit.cover,
+                                      child: GestureDetector(
+
+                                        onTap: (){ Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => HomePageWidget() ));},
+                                        child: Image.asset(
+                                          'assets/images/A-.png',
+                                          width: 100,
+                                          height: 100,
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -219,11 +224,15 @@ class GridofDonor extends StatelessWidget {
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           15, 15, 15, 15),
-                                      child: Image.asset(
-                                        'assets/images/A+.png',
-                                        width: 100,
-                                        height: 100,
-                                        fit: BoxFit.cover,
+                                      child: GestureDetector(
+                                        onTap: (){ Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => HomePageWidget() ));},
+                                        child: Image.asset(
+                                          'assets/images/A+.png',
+                                          width: 100,
+                                          height: 100,
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -244,11 +253,15 @@ class GridofDonor extends StatelessWidget {
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           15, 15, 15, 15),
-                                      child: Image.asset(
-                                        'assets/images/AB-.png',
-                                        width: 100,
-                                        height: 100,
-                                        fit: BoxFit.cover,
+                                      child: GestureDetector(
+                                        onTap: (){ Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => HomePageWidget() ));},
+                                        child: Image.asset(
+                                          'assets/images/AB-.png',
+                                          width: 100,
+                                          height: 100,
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -269,11 +282,15 @@ class GridofDonor extends StatelessWidget {
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           15, 15, 15, 15),
-                                      child: Image.asset(
-                                        'assets/images/B-.png',
-                                        width: 100,
-                                        height: 100,
-                                        fit: BoxFit.cover,
+                                      child: GestureDetector(
+                                        onTap: () { Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => HomePageWidget() ));},
+                                        child: Image.asset(
+                                          'assets/images/B-.png',
+                                          width: 100,
+                                          height: 100,
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -294,11 +311,15 @@ class GridofDonor extends StatelessWidget {
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           15, 15, 15, 15),
-                                      child: Image.asset(
-                                        'assets/images/B+.png',
-                                        width: 100,
-                                        height: 100,
-                                        fit: BoxFit.cover,
+                                      child: GestureDetector(
+                                        onTap: (){ Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => HomePageWidget() ));},
+                                        child: Image.asset(
+                                          'assets/images/B+.png',
+                                          width: 100,
+                                          height: 100,
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -319,8 +340,34 @@ class GridofDonor extends StatelessWidget {
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           15, 15, 15, 15),
+                                      child: GestureDetector(
+                                        onTap: (){ Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => HomePageWidget() ));},
+                                        child: Image.asset(
+                                          'assets/images/O-.png',
+                                          height: 100,
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Card(
+                                  clipBehavior: Clip.antiAliasWithSaveLayer,
+                                  color: Color(0xFFF5F5F5),
+                                  elevation: 10,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(15),
+                                  ),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15, 15, 15, 15),
+                                    child: GestureDetector(
+                                      onTap: (){ Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => HomePageWidget() ));},
                                       child: Image.asset(
-                                        'assets/images/O-.png',
+                                        'assets/images/O+.png',
+                                        width: 100,
                                         height: 100,
                                         fit: BoxFit.cover,
                                       ),
@@ -337,29 +384,15 @@ class GridofDonor extends StatelessWidget {
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         15, 15, 15, 15),
-                                    child: Image.asset(
-                                      'assets/images/O+.png',
-                                      width: 100,
-                                      height: 100,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                                Card(
-                                  clipBehavior: Clip.antiAliasWithSaveLayer,
-                                  color: Color(0xFFF5F5F5),
-                                  elevation: 10,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(15),
-                                  ),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        15, 15, 15, 15),
-                                    child: Image.asset(
-                                      'assets/images/AB+.png',
-                                      width: 100,
-                                      height: 100,
-                                      fit: BoxFit.cover,
+                                    child: GestureDetector(
+                                      onTap: (){ Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => HomePageWidget() ));},
+                                      child: Image.asset(
+                                        'assets/images/AB+.png',
+                                        width: 100,
+                                        height: 100,
+                                        fit: BoxFit.cover,
+                                      ),
                                     ),
                                   ),
                                 ),
